@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User.model')
 const CryptoJS = require("crypto-js");
-const bcrypt = require('bcrypt')
+// const bcrypt = require('bcrypt')
 var jwt = require('jsonwebtoken');
 const auth = require("../middlewares/validateTokenHandler")
 const generateAccessToken = (user) => {
@@ -38,7 +38,8 @@ router.post("/login",async (req,res)=>{
 
   const user = await User.findOne({email})
   if(!user) return res.status(400).json({msg :'user does not exist.'})
-  const isMatch = await bcrypt.compare(password , user.password)
+  // const isMatch = await bcrypt.compare(password , user.password)
+const isMatch = (user.password === password)
   if(!isMatch) return  res.status(400).json({msg :'Incorrect password'})
   const accesstoken = generateAccessToken({id : user._id})
   const refreshtoken = generateRefreshToken({id : user._id})
