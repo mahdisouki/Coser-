@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());  
 app.use(cors({origin:['http://localhost:3000']}))
 app.get('/test' , (req,res)=>{
-   rs.json('test') 
+   res.json('test') 
 })
 require("./db/conn")
 //middlewares
