@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User.model')
 const CryptoJS = require("crypto-js");
-// const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt')
 var jwt = require('jsonwebtoken');
 const auth = require("../middlewares/validateTokenHandler")
 const generateAccessToken = (user) => {
