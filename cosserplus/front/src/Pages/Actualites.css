@@ -1,0 +1,71 @@
+.cardss {
+  max-width: 320px;
+  border: 1px solid rgb(133, 129, 178);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerss {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.iconss {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgba(96, 165, 250, 1);
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.iconss svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.alertss {
+  font-weight: 600;
+  color: rgba(107, 114, 128, 1);
+}
+
+.messagess {
+  margin-top: 1rem;
+  color: rgba(107, 114, 128, 1);
+  word-wrap: break-word;
+}
+
+.actionsss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.actionsss a {
+  text-decoration: none;
+}
+
+.mark-as-read, .read {
+  flex-grow: 1;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.read {
+  background-color: rgba(59, 130, 246, 1);
+  color: rgba(255, 255, 255, 1);
+}
