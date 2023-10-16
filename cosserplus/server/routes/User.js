@@ -34,6 +34,10 @@ router.post('/register' ,async (req,res)=>{
     
 });
 router.post("/login",async (req,res)=>{
+   res.header('Access-Control-Allow-Origin', '*'); // Allow any origin
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Define allowed methods
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Define allowed headers
+
  try{ const {email , password} = req.body;
 
   const user = await User.findOne({email})
