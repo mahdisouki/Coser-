@@ -7,6 +7,7 @@ const userRoutes = require('./routes/User')
 const fileRoutes = require('./routes/Files');
 const validateToken = require("./middlewares/validateTokenHandler");
 var cors = require('cors')
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
