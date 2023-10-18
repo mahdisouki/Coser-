@@ -24,7 +24,7 @@ const downloadFile = async (id) => {
 };
 const getData = async ()=>{
   try{
-    const  res =  await  axios.get("http://localhost:5000/file/news");
+    const  res =  await  axios.get("https://azer-htjc6d7zb-mahdisouki-s-team.vercel.app/file/news");
     setNews(res.data);
     console.log(res.data)
   }
