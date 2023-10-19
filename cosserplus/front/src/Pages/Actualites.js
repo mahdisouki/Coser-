@@ -9,7 +9,7 @@ const [news, setNews] = useState(null);
 const downloadFile = async (id) => {
   try {
     const res = await axios.get(
-      `azer-nine.vercel.app/file/download/${id}`,
+      `https://azer-nine.vercel.app/file/download/${id}`,
       { responseType: "blob" }
     );
     const blob = new Blob([res.data], { type: res.data.type });
@@ -24,7 +24,7 @@ const downloadFile = async (id) => {
 };
 const getData = async ()=>{
   try{
-    const  res =  await  axios.get("azer-nine.vercel.app/file/news");
+    const  res =  await  axios.get("https://azer-nine.vercel.app/file/news");
     setNews(res.data);
     console.log(res.data)
   }
