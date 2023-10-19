@@ -21,7 +21,7 @@ const onSubmit = (e)=>{
       password : Motpasse
 
     }
-    axios.post("azer-nine.vercel.app/user/login" , data).then(
+    axios.post("https://azer-nine.vercel.app/user/login" , data).then(
       res=>{
         console.log("response",res.data.accesstoken)
         localStorage.setItem('isLogged' , true)
