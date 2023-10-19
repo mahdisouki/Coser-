@@ -20,7 +20,7 @@ function Dashboard() {
     setLoading(true);
     console.log(token);
     try {
-      const res = await axios.get("azer-nine.vercel.app/file" , {
+      const res = await axios.get("https://azer-nine.vercel.app/file" , {
         headers : {Authorization: token}
      
     });
@@ -42,7 +42,7 @@ function Dashboard() {
       formData.append("desc", desc);
       formData.append("file", fileInputRef.current.files[0]);
       const res = await axios.post(
-        "azer-nine.vercel.app/file/add",formData , {headers : {Authorization: token}});
+        "https://azer-nine.vercel.app/file/add",formData , {headers : {Authorization: token}});
       console.log("res",res);
       Swal.fire({
         title: 'fichier enregistré avec succes!',
@@ -62,7 +62,7 @@ function Dashboard() {
   const downloadFile = async (id) => {
     try {
       const res = await axios.get(
-        `azer-nine.vercel.app/file/download/${id}`,
+        `http://azer-nine.vercel.app/file/download/${id}`,
         { responseType: "blob" }
       );
       const blob = new Blob([res.data], { type: res.data.type });
@@ -77,7 +77,7 @@ function Dashboard() {
   };
   const removeFile = async(id) =>{
    try{
-    const res = await axios.delete(`azer-nine.vercel.app/file/${id}` , {headers : {Authorization: token}});
+    const res = await axios.delete(`https://azer-nine.vercel.app/file/${id}` , {headers : {Authorization: token}});
     // alert(res.data)
     // window.location.reload();
      }catch (error) {
