@@ -9,7 +9,7 @@ const [news, setNews] = useState(null);
 const downloadFile = async (id) => {
   try {
     const res = await axios.get(
-      `https://azer-htjc6d7zb-mahdisouki-s-team.vercel.app/file/download/${id}`,
+      `azer-nine.vercel.app/file/download/${id}`,
       { responseType: "blob" }
     );
     const blob = new Blob([res.data], { type: res.data.type });
