@@ -30,6 +30,7 @@ router.post('/add' ,upload.single("file"),async(req,res)=>{
   file.save();
 res.send("file uploaded!!")
 }catch(err){
+   res.json(err)
     console.log(err)
   }
 });
