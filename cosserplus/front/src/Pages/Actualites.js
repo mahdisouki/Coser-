@@ -8,23 +8,26 @@ const [news, setNews] = useState(null);
 
 const downloadFile = async (id) => {
   try {
-    const res = await axios.get(
-      `http://localhost:5000/file/download/${id}`,
-      { responseType: "blob" }
-    );
-    const blob = new Blob([res.data], { type: res.data.type });
-    const link = document.createElement("a");
-    link.href = window.URL.createObjectURL(blob);
-    link.download = "file1";
-  //   link.download = res.headers["content-disposition"].split("filename=")[1];
+    // Make a GET request to your server to initiate the download
+    const res = await axios.get(`http://localhost:5000/file/download/${id}`, {
+      responseType: 'blob', // Tell Axios to expect binary data (the file)
+    });
+
+    // Create a URL for the downloaded file and trigger the download
+    const url = window.URL.createObjectURL(new Blob([res.data]));
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'file.pdf'); // Set the desired file name and extension
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   } catch (error) {
     console.log(error);
   }
 };
 const getData = async ()=>{
   try{
-    const  res =  await  axios.get("http://localhost:5000/file/news");
+    const  res =  await  axios.get("https://azer-nine.vercel.app/file/news");
     setNews(res.data);
     console.log(res.data)
   }

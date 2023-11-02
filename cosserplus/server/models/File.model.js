@@ -3,7 +3,7 @@ const FileSchema =new mongoose.Schema({
     name : String,
     category: String,
     description : String,
-    data: String
+    publicId: String
     }
 );
 module.exports= mongoose.model("Cfile",FileSchema);

@@ -12,7 +12,6 @@ import Actualites from './Pages/Actualites';
 import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 import {DataProvider} from './GlobalState'
-
 function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
