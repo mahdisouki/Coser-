@@ -549,7 +549,7 @@ ul.email li i {
      background-image: url("../images//backg.jpg");
      background-position: center;
      background-repeat: no-repeat;
-     height: 100vh;
+     min-height: 100vh;
      padding: 90px 0;
 }
 
