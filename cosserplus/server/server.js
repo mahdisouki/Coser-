@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());  
-app.use(cors({ origin:['https://www.coserplus.com/'], 
+app.use(cors({ origin:['https://www.coserplus.com'], 
     credentials:true, 
     optionSuccessStatus:200}));
 app.options('*', cors());
