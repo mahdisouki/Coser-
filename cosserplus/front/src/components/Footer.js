@@ -65,10 +65,10 @@ function Footer() {
             <p>© 2023 All Rights Reserved. " <Link to={"/"}> COSERPLUS </Link></p>
           </div>
           <div className="col-md-6">
-            <ul className="social_icon text_align_center" style={{  listStyleType: "none"}}>
+            // <ul className="social_icon text_align_center" style={{  listStyleType: "none"}}>
           
-              // <li> <a href=""><i className="fa fa-linkedin-square" aria-hidden="true" /></a></li>
-            </ul>
+            //   <li> <a href=""><i className="fa fa-linkedin-square" aria-hidden="true" /></a></li>
+            // </ul>
           </div>
         </div>
       </div>
