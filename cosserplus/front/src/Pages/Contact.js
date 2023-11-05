@@ -49,7 +49,7 @@ function Contact() {
     </div>
   </div>
   
-    <div className='row'>
+    <div className='row' style={{margin: 0 , padding:0}}>
       <div className='col-sm-6'>
       <div className="contact" style={{ paddingTop:"120px"}}>
   <div className="container">
