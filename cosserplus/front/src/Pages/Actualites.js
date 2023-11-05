@@ -9,7 +9,7 @@ const [news, setNews] = useState(null);
 const downloadFile = async (id) => {
   try {
     // Make a GET request to your server to initiate the download
-    const res = await axios.get(`http://localhost:5000/file/download/${id}`, {
+    const res = await axios.get(`https://azer-nine.vercel.app/file/download/${id}`, {
       responseType: 'blob', // Tell Axios to expect binary data (the file)
     });
 
