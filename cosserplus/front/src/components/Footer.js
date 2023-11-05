@@ -45,7 +45,7 @@ function Footer() {
               <li> <a><i className="fa fa-phone" aria-hidden="true" />  +21655978185
                 </a>
               </li>
-              <li> <a> <i className="fa fa-envelope" aria-hidden="true" /> coserplus@gmail.com
+              <li> <a> <i className="fa fa-envelope" aria-hidden="true" /> cabinet.coserplus@gmail.com
                 </a>
               </li>
             </ul>
