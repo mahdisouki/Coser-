@@ -12,10 +12,11 @@ function Contact() {
     emailjs.sendForm('service_h3kdead', 'template_kubjq65', form.current, 'YjmQWR_aDHBTftS3g')
       .then((result) => {
           console.log(result.text);
+         window.location.href = '/';
       }, (error) => {
           console.log(error.text);
       });
-      window.location.href = '/'
+     
   };
   // useEffect(() => {
   //   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
