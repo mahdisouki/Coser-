@@ -45,7 +45,7 @@ function Footer() {
               <li> <a href="#"><i className="fa fa-phone" aria-hidden="true" />  +21655978185
                 </a>
               </li>
-              <li> <a href="#"> <i className="fa fa-envelope" aria-hidden="true" /> coserplus@gmail.com
+              <li> <a> <i className="fa fa-envelope" aria-hidden="true" /> coserplus@gmail.com
                 </a>
               </li>
             </ul>
@@ -67,7 +67,7 @@ function Footer() {
           <div className="col-md-6">
             <ul className="social_icon text_align_center" style={{  listStyleType: "none"}}>
           
-              <li> <a href=""><i className="fa fa-linkedin-square" aria-hidden="true" /></a></li>
+              // <li> <a href=""><i className="fa fa-linkedin-square" aria-hidden="true" /></a></li>
             </ul>
           </div>
         </div>
