@@ -1,0 +1,13 @@
+.tiitle{
+font-size:45px
+
+}
+
+@media screen and (max-width : 750px) {
+    .tiitle{
+        font-size: 5px;
+        font-weight: 100;
+       
+    }
+    
+}
