@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect , useRef } from 'react'
 import emailjs from '@emailjs/browser';
-
+import './home.css'
 function Home() {
   
   const form = useRef();
@@ -43,7 +43,7 @@ function Home() {
                 <div className="container-fluid">
                   <div className="carousel-caption relative">
                     <div className="bluid" >
-                      <h1 style={{color:"black" , fontSize:"75px"}}>Solutions  <br />comptables complètes </h1>
+                      <h1 className="tiitle" style={{color:"black" }}>Solutions comptables complètes </h1>
                       <p style={{color:"black"}}> 
 Tenue de livres, états financiers, planification et conformité fiscale
                       </p>
@@ -56,7 +56,7 @@ Tenue de livres, états financiers, planification et conformité fiscale
                 <div className="container-fluid">
                   <div className="carousel-caption relative">
                     <div className="bluid">
-                      <h1 style={{color:"black" , fontSize:"75px"}}>Gestion fiable  <br />de la paie </h1>
+                      <h1 className="tiitle" style={{color:"black" }}>Gestion fiable  <br />de la paie </h1>
                       <p style={{color:"black"}}> 
 Services de paie efficaces pour votre tranquillité d'esprit
                       </p>
@@ -69,7 +69,7 @@ Services de paie efficaces pour votre tranquillité d'esprit
                 <div className="container-fluid">
                   <div className="carousel-caption relative">
                     <div className="bluid">
-                      <h1 style={{color:"black" , fontSize:"75px"}}>Confidentialité <br />et professionnalisme </h1>
+                      <h1 className="tiitle" style={{color:"black" }}>Confidentialité <br />et professionnalisme </h1>
                       <p style={{color:"black"}}>Traitement de vos informations financières avec le plus grand soin
                       </p>
                      <Link to="/contact"className="read_more" >Contact </Link>
@@ -81,7 +81,7 @@ Services de paie efficaces pour votre tranquillité d'esprit
                 <div className="container-fluid">
                   <div className="carousel-caption relative">
                     <div className="bluid">
-                      <h1 style={{color:"black" , fontSize:"75px"}}>Contactez-nous <br/>dès aujourd'hui</h1>
+                      <h1 className="tiitle" style={{color:"black" }}>Contactez-nous <br/>dès aujourd'hui</h1>
                       <p style={{color:"black"}}>Découvrez comment nos services comptables peuvent vous être bénéfiques
                       </p>
                      <Link to="/contact"className="read_more" >Contact </Link>
@@ -134,8 +134,8 @@ Services de paie efficaces pour votre tranquillité d'esprit
                       <div className="col-md-4">
                         <div  id="bo_ho" style={{height: "100%"}} className="we_box text_align_center">
                           <i><img src="images/accounting.png" alt="#" /></i>
-                          <h3>COMPTABILITE ET FINANCE</h3>
-                          <p>
+                          <h3 >COMPTABILITE ET FINANCE</h3>
+                          <p >
                           la comptabilité et les finances s'occupent toutes deux de la gestion de l'argent, mais elles sont utilisées à deux fins très différentes. Pour faire simple, la comptabilité s'occupe davantage de ce qui s'est passé dans le passé, tandis que la finance consiste à faire de bonnes prévisions pour l'avenir.
                           </p><br/>
                           <a className="read_more" href="/service#service-COMPTABILITEETFINANCE-id" >Voir plus...</a>
@@ -144,8 +144,8 @@ Services de paie efficaces pour votre tranquillité d'esprit
                       <div className="col-md-4">
                         <div id="bo_ho" style={{height: "100%"}} className="we_box text_align_center">
                           <i><img src="images/fiscal.png" alt="#" /></i>
-                          <h3>SERVICES FISCAUX</h3>
-                          <p>Les services fiscaux, souvent résumés en "fisc", désignent les services chargés de percevoir les taxes et les impôts. Ils sont en charge des impôts directs comme la TVA, de la taxe d'habitation, de la taxe foncière, de la redevance télévision, de la taxation des plus-values, de l'impôt sur la fortune, de l'impôt sur les successions, et des recettes de poche.
+                          <h3 >SERVICES FISCAUX</h3>
+                          <p >Les services fiscaux, souvent résumés en "fisc", désignent les services chargés de percevoir les taxes et les impôts. Ils sont en charge des impôts directs comme la TVA, de la taxe d'habitation, de la taxe foncière, de la redevance télévision, de la taxation des plus-values, de l'impôt sur la fortune, de l'impôt sur les successions, et des recettes de poche.
                           </p>
                           <a className="read_more" href="/service#service-fiscal-id">Voir plus...</a>
                         </div>
@@ -153,8 +153,8 @@ Services de paie efficaces pour votre tranquillité d'esprit
                       <div className="col-md-4">
                         <div id="bo_ho" style={{height: "100%"}} className="we_box text_align_center">
                           <i><img src="images/compliant.png" alt="#" /></i>
-                          <h3>SERVICES JURIDIQUES</h3>
-                          <p>Le service juridique est le département de l'entreprise responsable du maintien de celle-ci dans le cadre de la loi et des réglementations en vigueur. Il est composé de juristes, des professionnels du droit, que l'on peut considérer comme des avocats de l'entreprise.
+                          <h3 >SERVICES JURIDIQUES</h3>
+                          <p >Le service juridique est le département de l'entreprise responsable du maintien de celle-ci dans le cadre de la loi et des réglementations en vigueur. Il est composé de juristes, des professionnels du droit, que l'on peut considérer comme des avocats de l'entreprise.
                           </p><br/><br/>
                           <a className="read_more" href="/service#service-juridique-id">Voir plus...</a>
                         </div>
@@ -172,8 +172,8 @@ Services de paie efficaces pour votre tranquillité d'esprit
                     <div className="col-md-4">
                     <div id="bo_ho" style={{height: "100%"}} className="we_box text_align_center">
                           <i><img src="images/administrator.png" alt="#" /></i>
-                          <h3>SERVICES SOCIALES</h3>
-                          <p>Les services sociaux de comptabilité regroupent des prestations et des aides comptables offertes dans le cadre des activités de soutien social et de bien-être. Ces services visent à aider les individus, les familles et les organisations sociales à gérer leurs finances, à se conformer aux exigences financières et fiscales
+                          <h3 className="tiitle">SERVICES SOCIALES</h3>
+                          <p >Les services sociaux de comptabilité regroupent des prestations et des aides comptables offertes dans le cadre des activités de soutien social et de bien-être. Ces services visent à aider les individus, les familles et les organisations sociales à gérer leurs finances, à se conformer aux exigences financières et fiscales
                           </p>
                           <a className="read_more" href="/service#service-social-id">Voir plus...</a>
                         </div>
@@ -181,8 +181,8 @@ Services de paie efficaces pour votre tranquillité d'esprit
                         <div className="col-md-4">
                         <div id="bo_ho" style={{height: "100%"}} className="we_box text_align_center">
                           <i><img src="images/accounting.png" alt="#" /></i>
-                          <h3>COMPTABILITE ET FINANCE</h3>
-                          <p>
+                          <h3 className="tiitle">COMPTABILITE ET FINANCE</h3>
+                          <p >
                           la comptabilité et les finances s'occupent toutes deux de la gestion de l'argent, mais elles sont utilisées à deux fins très différentes. Pour faire simple, la comptabilité s'occupe davantage de ce qui s'est passé dans le passé, tandis que la finance consiste à faire de bonnes prévisions pour l'avenir.
                           </p><br/>
                           <a className="read_more" href="/service#service-COMPTABILITEETFINANCE-id" >Voir plus...</a>
@@ -191,8 +191,8 @@ Services de paie efficaces pour votre tranquillité d'esprit
                       <div className="col-md-4">
                         <div id="bo_ho" style={{height: "100%"}} className="we_box text_align_center">
                           <i><img src="images/fiscal.png" alt="#" /></i>
-                          <h3>SERVICES FISCAUX</h3>
-                          <p>Les services fiscaux, souvent résumés en "fisc", désignent les services chargés de percevoir les taxes et les impôts. Ils sont en charge des impôts directs comme la TVA, de la taxe d'habitation, de la taxe foncière, de la redevance télévision, de la taxation des plus-values, de l'impôt sur la fortune, de l'impôt sur les successions, et des recettes de poche.
+                          <h3 className="tiitle">SERVICES FISCAUX</h3>
+                          <p >Les services fiscaux, souvent résumés en "fisc", désignent les services chargés de percevoir les taxes et les impôts. Ils sont en charge des impôts directs comme la TVA, de la taxe d'habitation, de la taxe foncière, de la redevance télévision, de la taxation des plus-values, de l'impôt sur la fortune, de l'impôt sur les successions, et des recettes de poche.
                           </p>
                           <a className="read_more" href="/service#service-fiscal-id">Voir plus...</a>
                         </div>
@@ -236,7 +236,7 @@ Le cabinet de comptabilité COSERPLUS a été fondé par ZOUAI NABIL est une ent
         </div>
         <div className="col-md-6 text_align_center">
           
-            <img src='images/affiche.png' style={{maxHeight:"100%"}} /><br/><br/><br/>
+            <img src='images/affiche.png' style={{height:"100%"}} /><br/><br/><br/>
             {/* <Link  to="/contact"className="read_more" >Contactez-Nous </Link> */}
         </div>
        
