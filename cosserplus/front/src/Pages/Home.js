@@ -236,7 +236,7 @@ Le cabinet de comptabilité COSERPLUS a été fondé par ZOUAI NABIL est une ent
         </div>
         <div className="col-md-6 text_align_center">
           
-            <img src='images/affiche.png' style={{height:"100%"}} /><br/><br/><br/>
+            <img src='images/affiche.png' style={{maxHeight:"100%"}} /><br/><br/><br/>
             {/* <Link  to="/contact"className="read_more" >Contactez-Nous </Link> */}
         </div>
        
