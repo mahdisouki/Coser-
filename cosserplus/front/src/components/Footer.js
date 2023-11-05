@@ -39,10 +39,10 @@ function Footer() {
               <li> <a href="https://goo.gl/maps/RCYDoDsQMnLFZZH4A"> <i className="fa fa-map-marker" aria-hidden="true" /> Location
                 </a>
               </li>
-              <li> <a href="#"><i className="fa fa-phone" aria-hidden="true" />  +21673492353
+              <li> <a><i className="fa fa-phone" aria-hidden="true" />  +21673492353
                 </a>
               </li>
-              <li> <a href="#"><i className="fa fa-phone" aria-hidden="true" />  +21655978185
+              <li> <a><i className="fa fa-phone" aria-hidden="true" />  +21655978185
                 </a>
               </li>
               <li> <a> <i className="fa fa-envelope" aria-hidden="true" /> coserplus@gmail.com
