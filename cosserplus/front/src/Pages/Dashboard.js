@@ -53,7 +53,7 @@ function Dashboard() {
           window.location.reload();
         } 
       })
-    // window.location.reload();
+     window.location.reload();
     } catch (error) {
       console.log(error.response);
     }
@@ -82,7 +82,7 @@ function Dashboard() {
    try{
     const res = await axios.delete(`https://azer-nine.vercel.app/file/${id}` , {headers : {Authorization: token}});
     // alert(res.data)
-    // window.location.reload();
+     window.location.reload();
      }catch (error) {
     console.log(error);
   }
