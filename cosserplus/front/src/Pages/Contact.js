@@ -91,7 +91,7 @@ function Contact() {
         <div className="titlepage text_align_left">
           <h2>Trouvez-Nous</h2>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099.8044368054072!2d10.968829824292577!3d35.637872846923656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1302175ea284e8db%3A0xdaf21b0f8b045dbe!2sCabinet%20Nabil%20Zouai!5e0!3m2!1sen!2stn!4v1689687564997!5m2!1sen!2stn"     width={550} height={550} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099.8044368054072!2d10.968829824292577!3d35.637872846923656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1302175ea284e8db%3A0xdaf21b0f8b045dbe!2sCabinet%20Nabil%20Zouai!5e0!3m2!1sen!2stn!4v1689687564997!5m2!1sen!2stn"     width={100%} height={550} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 
       </div>
     </div>
