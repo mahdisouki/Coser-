@@ -79,7 +79,7 @@ setTimeout(()=>{
   
   return (
     <>
-    <div className='row' style={{ paddingTop:"200px"}}>
+    <div className='row' style={{ paddingTop:"200px" , mraginRight:"0"}}>
       <div className='col-md-6 sect'>
        <h1 style={{color:'#808080' , padding:"20px"}}>Nos services</h1>
        <hr/>
