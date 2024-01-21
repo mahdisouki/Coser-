@@ -107,7 +107,7 @@ function Dashboard() {
             showConfirmButton:false
           }
         );
-        // window.location.reload();
+         window.location.reload();
       }
     })
   }
