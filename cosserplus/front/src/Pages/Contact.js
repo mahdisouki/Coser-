@@ -55,7 +55,7 @@ function Contact() {
       <div className="contact" style={{ paddingTop:"120px"}}>
   <div className="container">
     <div className="row "style={{borderRight:"2px grey solid"}}>
-      <div className="col-md-8 offset-md-2">
+      <div className="col-md-8">
         <div className="titlepage text_align_left">
           <h2>CONTACT</h2>
         </div>
