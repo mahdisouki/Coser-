@@ -40,7 +40,7 @@ const getData = async ()=>{
    getData();
    }, [] );
   return (
-    <div className='row' style={{paddingTop:"150px", paddingLeft:"10px",paddingRight:"10px"}}>
+    <div className='row' style={{paddingTop:"150px", paddingLeft:"10px",paddingRight:"10px" , margin:"0"}}>
     {
       news && news.map((newt)=>(
         <div  className="cardss col-sm-3" key={newt._id}>
