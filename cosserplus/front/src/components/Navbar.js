@@ -175,7 +175,7 @@ function Navbar() {
                            style={{ fontWeight: '500' }}
                            
                            className="dropbtn nav-link"
-                           onClick={logout()}
+                           onClick={()=>logout()}
                          >
                            logout
                          </Link>
