@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  
+  const token = localStorage.getItem('token');
    const logout = ()=>{
     localStorage.removeItem("token");
     window.location.href = "/";
@@ -21,7 +21,7 @@ function Navbar() {
 
   // Add an event listener to close the menu when a navigation item is clicked
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach((link) => {
       link.addEventListener('click', closeMenu);
