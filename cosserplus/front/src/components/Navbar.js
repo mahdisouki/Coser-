@@ -4,6 +4,10 @@ import './Navbar.css';
 
 function Navbar() {
   const token = localStorage.getItem('token');
+   const logout = ()=>{
+    localStorage.removeItem("token");
+    window.location.href = "/";
+  }
   // Function to close the Bootstrap menu when a navigation item is clicked
   const closeMenu = () => {
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -168,8 +172,9 @@ function Navbar() {
                        <div className="dropdown">
                          <Link
                            style={{ fontWeight: '500' }}
-                           to={'/actualité'}
+                           
                            className="dropbtn nav-link"
+                           onClick={logout()}
                          >
                            logout
                          </Link>
