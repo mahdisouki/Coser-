@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+  const token = localStorage.getItem('token');
   // Function to close the Bootstrap menu when a navigation item is clicked
   const closeMenu = () => {
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
-
+    
     if (navbarToggler && navbarCollapse) {
       navbarToggler.classList.add('collapsed');
       navbarCollapse.classList.remove('show');
@@ -162,6 +163,19 @@ function Navbar() {
                         </Link>
                       </div>
                     </li>
+                            {token?(
+                       <li className="nav-item">
+                       <div className="dropdown">
+                         <Link
+                           style={{ fontWeight: '500' }}
+                           to={'/actualité'}
+                           className="dropbtn nav-link"
+                         >
+                           logout
+                         </Link>
+                       </div>
+                     </li>
+                    ):(<p></p>)}
                   </ul>
                 </div>
               </nav>
