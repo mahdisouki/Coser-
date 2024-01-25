@@ -33,7 +33,7 @@ function Navbar() {
         link.removeEventListener('click', closeMenu);
       });
     };
-  }, [token]);
+  }, []);
 
   return (
     <header>
